@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
 
 /**
  *
- * @author Missaci
+ * @author Missaci, sasuk
  */
 public class FichaTecnicaDTOIn {
     
@@ -29,6 +29,7 @@ public class FichaTecnicaDTOIn {
     @NotEmpty
     private String cor;
     
+    @NotNull @NotEmpty
     private Date validade;
     
     public FichaTecnicaDTOIn(){
@@ -49,8 +50,6 @@ public class FichaTecnicaDTOIn {
         }
         return fichas;
     }
-    
-    
     
     public FichaTecnicaDTOIn(Peso peso, Tamanho tamanho, String marca, String cor, Date validade){
         this.peso = peso;
