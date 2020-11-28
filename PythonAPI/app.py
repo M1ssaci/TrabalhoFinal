@@ -9,7 +9,6 @@ from flask_sqlalchemy import SQLAlchemy
 from marshmallow import fields
 from sqlalchemy.orm import relationship
 from marshmallow_sqlalchemy import ModelSchema
-import datetime as dt
 
 """
 Configuracoes do Banco e Flask:
